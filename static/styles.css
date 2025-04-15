@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "response resorts"
+    "response flights";
+  gap: 20px;
+  padding: 20px;
+  height: 95vh;
+}
+
+.navbar {
+  width: 100vw;
+  padding-left: 2rem;
+  margin: 0;
+  transform: translate(-0.5rem, -0.5rem);
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #f8e8ad88;
+  height: 10vh;
+}
+.response,
+.resorts,
+.flights {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  color: black;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.response {
+  grid-area: response;
+}
+
+.resorts {
+  grid-area: resorts;
+}
+
+.flights {
+  grid-area: flights;
+}
+
+h2 {
+  margin-top: 0;
+  color: #130a18;
+}
+
+p {
+  margin: 0;
+}
