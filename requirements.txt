@@ -1,0 +1,9 @@
+streamlit>=1.32.0
+pydantic>=2.0
+docx2pdf
+python-docx
+openai
+requests
+reportlab
+pillow
+streamlit_chat
